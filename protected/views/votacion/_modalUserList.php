@@ -1,7 +1,6 @@
 <table class="table table-hover">
 	<thead>
-		<th>Nombre</th>
-		<th>Telefono</th>
+		<th style="color:#006761;">Nombre</th>
 	</thead>
 	<tbody>
 	<?php  
@@ -9,7 +8,6 @@
 	?>
 	<tr>
 		<td><?=$datax["Nombres"]?></td>
-		<td><?=$datax["Telefono"]?></td>
 	</tr>
 <?php 
 endforeach;

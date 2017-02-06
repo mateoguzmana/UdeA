@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="signin-info">
-                            <img src="images/cootramed.jpg" width="300" height="100">
+                            <img src="images/logocooprudea.gif" width="300" height="100">
                         </div><!-- signin0-info -->
                     </div><!-- col-sm-7 -->
                     <div class="col-md-5">

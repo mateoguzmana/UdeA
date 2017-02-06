@@ -7,7 +7,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-1">      			
-                        <span class="fa fa-exclamation-triangle" style="font-size:40px;color:red;"></span>
+                        <img src="images/alert.png" style="width:40px;"></img>
                     </div>
                     <div class="col-sm-11">
                         <p class="text-modal-body" style="font-size:18px;font-weight:normal;"></p>
@@ -15,8 +15,8 @@
                 </div>
             </div>
             <div class="modal-footer">                 
-                <button class="btn btn-danger" id="isOK" type="button">SI</button>       
-                <button data-dismiss="modal" class="btn btn-danger" type="button">NO</button>    
+                <button class="btn btn-success" style="background-color:#006761;" id="isOK" type="button">SI</button>       
+                <button data-dismiss="modal" class="btn btn-success" style="background-color:#006761;" type="button">NO</button>    
             </div>
         </div><!-- modal-content -->
     </div><!-- modal-dialog -->

@@ -37,7 +37,7 @@ $this->breadcrumbs = array(
     </div>
     <span style="color:red;font-size:1.2em;"><?php echo $form->error($model, 'error'); ?></span>
     <div class="row">
-        <?php echo CHtml::submitButton('Ingresar', array('class'=>'btn btn-primary','style'=>'font-size:1.2em;')); ?>
+        <?php echo CHtml::submitButton('Ingresar', array('class'=>'btn btn-lg','style'=>'background-color:#006761;color:white;')); ?>
     </div>
 
 <?php $this->endWidget(); ?>

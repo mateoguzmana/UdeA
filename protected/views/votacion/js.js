@@ -42,13 +42,8 @@ $(document).ready(function () {
         }
         else
         {
-            var txt = $("input:radio[name='candidato']:checked").parent().find("span").html();
-            txt = txt.split("-");
-            var nro  = txt[0];
-            var name = txt[1];
-
-            var mensaje = '¿Está seguro de registrar su voto por la plancha Nro ' +
-            nro + ' Encabezada por '+name+'?';
+            var mensaje = '¿Está seguro de registrar su voto por el candidato ' +
+            $("input:radio[name='candidato']:checked").parent().find("span").html() + '?';
             $('#_alertVerification .modal-content').css('width', '750px');
             $('#_alertVerification .modal-content').css('margin-left', '-180px');
             $('#_alertVerification .modal-content').css('margin-top', '150px');

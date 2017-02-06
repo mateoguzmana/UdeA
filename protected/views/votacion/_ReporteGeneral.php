@@ -43,7 +43,7 @@ endfor;
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2 style="text-align:center;color:#4863A0;">
+                    <h2 style="text-align:center;color:#006761;">
                         <?=strtoupper($eleccion['Descripcion']);?>
                     </h2>
                 </div>
@@ -167,13 +167,13 @@ endfor;
                 type: 'msbar3d',
                 renderAt: "chartContainer",
                 width: '1000',
-                height: '1000',
+                height: '300',
                 dataFormat: 'json',
                 dataSource: {
                     "chart": {
                         "caption": "Detallado Votación",
                         "yAxisname": "Cantidad Votos",
-                        "paletteColors": "#0000FF,#1AAF5D",
+                        "paletteColors": "#006761,#1AAF5D",
                         "bgColor": "#FFFFFF",
                         "legendBorderAlpha": "0",
                         "legendBgAlpha": "0",
@@ -266,7 +266,7 @@ endfor;
                         "canvasbasecolor": "#CCCCCC",
                         "showcanvasbg": "0",
                         "animation": "0",
-                        "palettecolors": "#0000FF,#FF0000,#f8bd19,#e44a00,#33bdda",
+                        "palettecolors": "#006761,#FF0000,#f8bd19,#e44a00,#33bdda",
                         "showborder": "0",
                         "formatNumberScale":'0',
                         "formatNumber":'0',
@@ -332,7 +332,7 @@ endfor;
                     }, {
                         "label": "Sin Votar",
                         "value": "<?=$totalUsuarios-$sufragantes-$votosInactivos;?>",
-                        "color": "0000FF"
+                        "color": "006761"
                     }]
                 }
             });

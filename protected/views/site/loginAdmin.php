@@ -43,7 +43,7 @@ $this->breadcrumbs=array(
 
         <div class="mb20"></div>
 	<div class="row">
-		<?php echo CHtml::submitButton('Ingresar', array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::submitButton('Ingresar', array('class'=>'btn btn-lg', 'style'=>'background-color:#006761;color:white;')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

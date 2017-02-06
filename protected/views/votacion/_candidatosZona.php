@@ -14,7 +14,7 @@ td img{
 <div class="pageheader">
     <h2>
         <a style="text-decoration: none;" class="salirCandidatos">
-            <img src="images/home.png" class="cursorpointer" style="width: 38px; margin-right: 15px; margin-left: 15px;"/> 
+            <img src="images/elections2.png" class="cursorpointer" style="width: 38px; margin-right: 15px; margin-left: 15px;"/> 
         </a>
         <?php echo strtoupper($eleccion['Descripcion']); ?><span></span></h2>      
 </div>
@@ -67,6 +67,9 @@ td img{
                     <tr>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i]['IdCandidato']?>, '<?=$candidatos[$count][$i]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php
                                     if ($candidatos[$count][$i]['IdCandidato'] == 89):
@@ -83,6 +86,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+1]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+1]['IdCandidato']?>, '<?=$candidatos[$count][$i+1]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php
                                     if ($candidatos[$count][$i+1]['IdCandidato'] == 89):
@@ -99,6 +105,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+1]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+1]['IdCandidato']?>, '<?=$candidatos[$count][$i+1]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php echo $candidatos[$count][$i+1]['IdCandidato'] . " - " . $candidatos[$count][$i+1]['Nombres']; ?>
                                 </span><br>
@@ -108,6 +117,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+2]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+2]['IdCandidato']?>, '<?=$candidatos[$count][$i+2]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php
                                     if ($candidatos[$count][$i+2]['IdCandidato'] == 89):
@@ -143,7 +155,10 @@ td img{
                     <tr>
                         <td class="col-md-2">
                             <label>
-                                <span style="font-size:1.2em;">
+                                <?php if($candidatos[$count][$i]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i]['IdCandidato']?>, '<?=$candidatos[$count][$i]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
+                                <span style="font-size:1.2em;onclick="loadList2(<?=$candidatos[$count][$i+3]['IdCandidato']?>, '<?=$candidatos[$count][$i+3]["Nombres"]?>')" ">
                                     <?php echo $candidatos[$count][$i]['IdCandidato'] . " - " . $candidatos[$count][$i]['Nombres']; ?>
                                 </span><br>
                                 <input type="radio" value="<?php echo $candidatos[$count][$i]['IdCandidato']; ?>" name="candidato">
@@ -152,6 +167,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+1]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+1]['IdCandidato']?>, '<?=$candidatos[$count][$i+1]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php echo $candidatos[$count][$i+1]['IdCandidato'] . " - " . $candidatos[$count][$i+1]['Nombres']; ?>
                                 </span><br>
@@ -161,6 +179,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+2]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+2]['IdCandidato']?>, '<?=$candidatos[$count][$i+2]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php echo $candidatos[$count][$i+2]['IdCandidato'] . " - " . $candidatos[$count][$i+2]['Nombres']; ?>
                                 </span><br>
@@ -170,6 +191,9 @@ td img{
                         <td class="col-md-1 separateColumn"></td>
                         <td class="col-md-2">
                             <label>
+                                <?php if($candidatos[$count][$i+3]['IdCandidato']!=89){?>
+                                <button onclick="loadList2(<?=$candidatos[$count][$i+3]['IdCandidato']?>, '<?=$candidatos[$count][$i+3]["Nombres"]?>')" class="btn" style="background-color:#006761;color:white;">Ver plancha</button><br>
+                                <?php } ?>
                                 <span style="font-size:1.2em;">
                                     <?php echo $candidatos[$count][$i+3]['IdCandidato'] . " - " . $candidatos[$count][$i+3]['Nombres']; ?>
                                 </span><br>
@@ -186,8 +210,11 @@ td img{
                 <?php $count++; ?>
                 <?php endforeach; ?>
                 <div style="text-align:center;padding-top:15px;">
-                    <button id="vote" class="btn-default-alt">
-                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/votar.png" />
+                    <!--<button id="vote" class="btn-default-alt">
+                        <img src="<?//php echo Yii::app()->request->baseUrl; ?>/images/votar.png" />
+                    </button>-->
+                    <button id="vote" style="background-color:#006761;color:white;" class="btn-lg">
+                        &nbsp;&nbsp;Votar&nbsp;&nbsp;
                     </button>
                 </div>
             </div>
@@ -231,7 +258,7 @@ function loadList2(id, nombre){
             }
         }); 
 
-        $("#myModalLabel").html("PLANCHA DEL CANDIDATO #"+id+" - "+nombre);
+        $("#myModalLabel").html("PLANCHA <strong style='color:#006761;'>#"+id+"</strong> ENCABEZADA POR <strong style='color:#006761;'>"+nombre+"</strong>");
         $('#myModal').modal('show');
     }
 }

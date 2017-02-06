@@ -39,7 +39,7 @@
         <section>
             <div class="leftpanel">
                 <div class="logopanel text-center">
-                    <h1><img src="images/Logocootramed.png" style="width:200px; height: 50px;"/></h1>
+                    <h1><img src="images/logocooprudea.gif" style="width:200px; height: 50px;"/></h1>
                 </div><!-- logopanel -->
                 <div class="leftpanelinner">
                     <!--<h5 class="sidebartitle">Menu</h5>-->

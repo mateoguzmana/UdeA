@@ -33,8 +33,8 @@ endforeach;
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-2">
-                    <button id="btnBack">
-                        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/atras.png" alt="Atras" width="110" height="60" />
+                    <button id="btnBack" class="btn" style="background-color:#006761;color:white;">
+                        &nbsp;&nbsp;Atrás&nbsp;&nbsp;
                     </button>
                 </div>
                 <div class="col-md-10">
@@ -47,7 +47,7 @@ endforeach;
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2 style="text-align:center;color:#4863A0;">
+                    <h2 style="text-align:center;color:#006761;">
                         <?php echo ucfirst($nombreZona[0]['Nombre']); ?>
                     </h2>
                 </div>
@@ -173,7 +173,7 @@ endforeach;
                     "chart": {
                         "caption": "Detallado Votación",
                         "yAxisname": "Cantidad Votos",
-                        "paletteColors": "#0075C2,#1AAF5D",
+                        "paletteColors": "#006761,#1AAF5D",
                         "bgColor": "#FFFFFF",
                         "legendBorderAlpha": "0",
                         "legendBgAlpha": "0",
@@ -236,7 +236,7 @@ endforeach;
                         "canvasbasecolor": "#CCCCCC",
                         "showcanvasbg": "0",
                         "animation": "0",
-                        "palettecolors": "#2E64FE,#FF0000,#f8bd19,#e44a00,#33bdda",
+                        "palettecolors": "#006761,#FF0000,#f8bd19,#e44a00,#33bdda",
                         "showborder": "0",
                         "formatNumberScale":'0',
                         "formatNumber":'0',
@@ -302,7 +302,7 @@ endforeach;
                     }, {
                         "label": "Sin Votar",
                         "value": "<?=$totalUsuarios-$sufragantes-$votosInactivos;?>",
-                        "color": "2E64FE"
+                        "color": "006761"
                     }]
                 }
             });

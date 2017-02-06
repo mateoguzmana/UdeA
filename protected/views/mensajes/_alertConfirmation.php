@@ -33,14 +33,14 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-2">      			
-                        <span class="fa fa-exclamation-triangle" style="font-size: 40px; color: orange;"></span>
+                       <img src="images/alert.png" style="width:40px;"></img>
                     </div>
                     <div class="col-sm-10">
                         <p class="text-modal-body"></p>
                     </div>
                 </div>
             <div class="modal-footer">                 
-                <button data-dismiss="modal" class="btn btn-primary" type="button">Aceptar</button>    
+                <button data-dismiss="modal" class="btn btn-primary" style="background-color:#006761;" type="button">Aceptar</button>    
             </div>
             </div>
         </div><!-- modal-content -->
